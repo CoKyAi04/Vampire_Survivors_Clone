@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 203881239}
   - component: {fileID: 203881241}
   - component: {fileID: 203881242}
+  - component: {fileID: 203881243}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -365,6 +366,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aceb249a6bd2d314293b27ac1fec63c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &203881243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203881235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4e0d5ef3924e6408e7a92e73f10f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: a9af88b5504b1bb40a1f49b8a46afc59, type: 2}
+  experience: 0
+  level: 1
+  experienceCap: 100
+  experienceCapIncrease: 100
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

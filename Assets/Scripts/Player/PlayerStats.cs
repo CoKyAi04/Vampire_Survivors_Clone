@@ -14,6 +14,13 @@ public class PlayerStats : MonoBehaviour
     float currentMight;
     float currentProjectileSpeed;
 
+    //Experience and level of the player
+    [Header("Experience/Level")]
+    public int experience = 0;
+    public int level = 1;
+    public int experienceCap = 100;
+    public int experienceCapIncrease;
+
     void Awake()
     {
         //Assign the variables
@@ -22,5 +29,23 @@ public class PlayerStats : MonoBehaviour
         currentMoveSpeed = characterData.MoveSpeed;
         currentMight = characterData.Might;
         currentProjectileSpeed = characterData.ProjectileSpeed;
+    }
+
+    public void IncreaseExperince(int amount)
+    {
+        experience += amount;
+
+        LevelupChecker();
+    }
+
+    void LevelupChecker()
+    {
+        if(experience > experienceCap) // Increase level if the experience is more 
+        {
+            //Level up the player and deduct their experience
+            level++;
+            experience -= experienceCap;
+            experienceCap += experienceCapIncrease;
+        }
     }
 }
