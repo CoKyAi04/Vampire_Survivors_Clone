@@ -381,8 +381,14 @@ MonoBehaviour:
   characterData: {fileID: 11400000, guid: a9af88b5504b1bb40a1f49b8a46afc59, type: 2}
   experience: 0
   level: 1
-  experienceCap: 100
-  experienceCapIncrease: 100
+  experienceCap: 0
+  levelRanges:
+  - startLevel: 1
+    endLevel: 3
+    experienceCapInCrease: 100
+  - startLevel: 4
+    endLevel: 5
+    experienceCapInCrease: 200
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

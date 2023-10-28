@@ -18,8 +18,18 @@ public class PlayerStats : MonoBehaviour
     [Header("Experience/Level")]
     public int experience = 0;
     public int level = 1;
-    public int experienceCap = 100;
-    public int experienceCapIncrease;
+    public int experienceCap;
+
+    //Class for defining a level range and the corresponding experience cap increase for that range
+    [System.Serializable]
+    public class LevelRange
+    {
+        public int startLevel;
+        public int endLevel;
+        public int experienceCapInCrease;
+    }
+
+    public List<LevelRange> levelRanges;
 
     void Awake()
     {
@@ -31,21 +41,36 @@ public class PlayerStats : MonoBehaviour
         currentProjectileSpeed = characterData.ProjectileSpeed;
     }
 
+    void Start()
+    {
+        //Initialize the experience cap as the first experience cap increase
+        experienceCap = levelRanges[0].experienceCapInCrease;
+    }
+
     public void IncreaseExperince(int amount)
     {
         experience += amount;
 
-        LevelupChecker();
+        LevelUpChecker();
     }
 
-    void LevelupChecker()
+    void LevelUpChecker()
     {
-        if(experience > experienceCap) // Increase level if the experience is more 
+        if (experience > experienceCap) // Increase level if the experience is more 
         {
             //Level up the player and deduct their experience
             level++;
             experience -= experienceCap;
-            experienceCap += experienceCapIncrease;
+
+            int experienceCapIncrease = 0;
+            foreach (LevelRange range in levelRanges)
+            {
+                if(level >= range.startLevel && level <= range.endLevel)
+                {
+                    experienceCapIncrease = range.experienceCapInCrease;
+                    break;
+                }
+            }
         }
     }
 }
