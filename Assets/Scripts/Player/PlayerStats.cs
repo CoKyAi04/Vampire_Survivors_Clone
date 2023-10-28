@@ -56,7 +56,7 @@ public class PlayerStats : MonoBehaviour
 
     void LevelUpChecker()
     {
-        if (experience > experienceCap) // Increase level if the experience is more 
+        if (experience >= experienceCap) // Increase level if the experience is more 
         {
             //Level up the player and deduct their experience
             level++;
@@ -71,6 +71,7 @@ public class PlayerStats : MonoBehaviour
                     break;
                 }
             }
+            experienceCap += experienceCapIncrease;
         }
     }
 }

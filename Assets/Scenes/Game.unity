@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 203881241}
   - component: {fileID: 203881242}
   - component: {fileID: 203881243}
+  - component: {fileID: 203881244}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -389,6 +390,18 @@ MonoBehaviour:
   - startLevel: 4
     endLevel: 5
     experienceCapInCrease: 200
+--- !u!114 &203881244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203881235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9241a4c5f1f35994ebdf4ac1f69e6547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +669,7 @@ MonoBehaviour:
   drops:
   - name: Blue Gem
     itemPrefab: {fileID: 7022472963135898048, guid: e89881d9758b23745a846d8cae21626e, type: 3}
-    dropRate: 50
+    dropRate: 100
 --- !u!1001 &4550546664042459449
 PrefabInstance:
   m_ObjectHideFlags: 0
