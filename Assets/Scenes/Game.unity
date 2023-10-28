@@ -636,6 +636,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+--- !u!1 &461759422172868373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+  m_PrefabInstance: {fileID: 461759422172868372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &461759422172868374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461759422172868373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4265135ba30eea74486e31e38ba0e92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Blue Gem
+    itemPrefab: {fileID: 7022472963135898048, guid: e89881d9758b23745a846d8cae21626e, type: 3}
+    dropRate: 50
 --- !u!1001 &4550546664042459449
 PrefabInstance:
   m_ObjectHideFlags: 0
