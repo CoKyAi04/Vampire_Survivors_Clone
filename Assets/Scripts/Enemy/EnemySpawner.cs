@@ -23,16 +23,58 @@ public class EnemySpawner : MonoBehaviour
         public GameObject enemyPrefab;
     }
     public List<Wave> waves;
+    public int currentWaveCount;
+
+    [Header("Spawner Attributes")]
+    float spawnTimer;
+
+    Transform player;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = FindObjectOfType<PlayerStats>().transform;
+        CalculateWaveQuota();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        spawnTimer += Time.deltaTime;
+        if(spawnTimer >= waves[currentWaveCount].spawnInterval)
+        {
+            spawnTimer = 0f;
+            SpawnEnemies();
+        }
+    }
+
+    void CalculateWaveQuota()
+    {
+        int currentWaveQuota = 0;
+        foreach(var enemyGroup in waves[currentWaveCount].enemyGroups)
+        {
+            currentWaveQuota += enemyGroup.enemyCount;
+        }
+
+        waves[currentWaveCount].waveQuota = currentWaveQuota;
+        Debug.LogWarning(currentWaveQuota);
+    }
+
+    void SpawnEnemies()
+    {
+        if (waves[currentWaveCount].spawnCount < waves[currentWaveCount].waveQuota)
+        {
+            foreach(var enemyGroup in waves[currentWaveCount].enemyGroups)
+            {
+                if(enemyGroup.spawnCount < enemyGroup.enemyCount)
+                {
+                    Vector2 spawnPosition = new Vector2(player.transform.position.x + Random.Range(-10f, 10f), player.transform.position.y + Random.Range(-10f, 10f));
+                    Instantiate(enemyGroup.enemyPrefab, spawnPosition, Quaternion.identity);
+
+                    enemyGroup.spawnCount++;
+                    waves[currentWaveCount].spawnCount++;
+                }
+            }
+        }
     }
 }
