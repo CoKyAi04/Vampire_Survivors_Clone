@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7047817430718585708}
   - component: {fileID: 3285046736517432149}
   - component: {fileID: 4906300661492547023}
+  - component: {fileID: 9149129357993063415}
   m_Layer: 0
   m_Name: Red Bat
   m_TagString: Enemy
@@ -138,7 +139,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461759420925149495}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8354af90658fa984495e7be309fc3bc1, type: 3}
   m_Name: 
@@ -159,3 +160,20 @@ MonoBehaviour:
   currentMoveSpeed: 0
   currentHealth: 0
   currentDamage: 0
+  despawnDistance: 20
+--- !u!114 &9149129357993063415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461759420925149495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4265135ba30eea74486e31e38ba0e92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Blue Gem
+    itemPrefab: {fileID: 7022472963135898048, guid: e89881d9758b23745a846d8cae21626e, type: 3}
+    dropRate: 50
