@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -27,7 +28,13 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Spawner Attributes")]
     float spawnTimer;
+    public int enemiesAlive;
+    public int maxEnemiesAllowed;
+    public bool maxEnemiesReached = false;
     public float waveInterval;
+
+    [Header("Spawn Positions")]
+    public List<Transform> relativeSpawnPoints;
 
     Transform player;
 
@@ -78,19 +85,34 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemies()
     {
-        if (waves[currentWaveCount].spawnCount < waves[currentWaveCount].waveQuota)
+        if (waves[currentWaveCount].spawnCount < waves[currentWaveCount].waveQuota && !maxEnemiesReached)
         {
             foreach(var enemyGroup in waves[currentWaveCount].enemyGroups)
             {
                 if(enemyGroup.spawnCount < enemyGroup.enemyCount)
                 {
-                    Vector2 spawnPosition = new Vector2(player.transform.position.x + Random.Range(-10f, 10f), player.transform.position.y + Random.Range(-10f, 10f));
-                    Instantiate(enemyGroup.enemyPrefab, spawnPosition, Quaternion.identity);
+                    if(enemiesAlive >= maxEnemiesAllowed)
+                    {
+                        maxEnemiesReached = true;
+                        return;
+                    }
+                    Instantiate(enemyGroup.enemyPrefab, player.position + relativeSpawnPoints[Random.Range(0, relativeSpawnPoints.Count)].position, Quaternion.identity);
 
                     enemyGroup.spawnCount++;
                     waves[currentWaveCount].spawnCount++;
+                    enemiesAlive++;
                 }
             }
         }
+
+        if(enemiesAlive < maxEnemiesAllowed)
+        {
+            maxEnemiesReached = false;
+        }
+    }
+
+    public void OnEnemyKilled()
+    {
+        enemiesAlive--;
     }
 }
