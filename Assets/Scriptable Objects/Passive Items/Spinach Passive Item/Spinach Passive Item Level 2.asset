@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multipler: 150
   level: 2
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 1864991448702644566, guid: 5c40a9c081d986c4e94f63da7e3c7ea3, type: 3}
+  name: Spinach Level 2
+  description: Increase Might by 150%
   icon: {fileID: 6319603199432094965, guid: 9a4fc81d095024a48880d86a3c54f2b7, type: 3}

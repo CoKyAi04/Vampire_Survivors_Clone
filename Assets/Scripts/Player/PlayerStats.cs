@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.U2D.Animation;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -134,6 +135,11 @@ public class PlayerStats : MonoBehaviour
     public int weaponIndex;
     public int passiveItemIndex;
 
+    [Header("UI")]
+    public Image healthBar;
+    public Image expBar;
+    public Text levelText;
+
     public GameObject secondWeapon;
     public GameObject firstPassiveItemTest, secondPassiveItemTest;
 
@@ -154,8 +160,8 @@ public class PlayerStats : MonoBehaviour
 
         //Spawn the starting weapon
         SpawnWeapon(characterData.StartingWeapon);
-        SpawnWeapon(secondWeapon);
-        SpawnPassiveItem(firstPassiveItemTest);
+        //SpawnWeapon(secondWeapon);
+        //SpawnPassiveItem(firstPassiveItemTest);
         SpawnPassiveItem(secondPassiveItemTest);
     }
 
@@ -172,6 +178,10 @@ public class PlayerStats : MonoBehaviour
         GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet;
 
         GameManager.instance.AssignChosenCharacterUI(characterData);
+        
+        UpdateHealBar();
+        UpdateExpBar();
+        UpdateLevelText();
     }
 
     void Update()
@@ -193,6 +203,8 @@ public class PlayerStats : MonoBehaviour
         experience += amount;
 
         LevelUpChecker();
+
+        UpdateExpBar();
     }
 
     void LevelUpChecker()
@@ -214,10 +226,19 @@ public class PlayerStats : MonoBehaviour
             }
             experienceCap += experienceCapIncrease;
 
+            UpdateLevelText();
+
             GameManager.instance.StartLevelUp();
         }
     }
-
+    void UpdateExpBar()
+    {
+        expBar.fillAmount = (float)experience / experienceCap;
+    }
+    void UpdateLevelText()
+    {
+        levelText.text = "LV "+ level.ToString();
+    }
     public void TakeDamage(float dmg)
     {
         if(!isInvincible)
@@ -231,8 +252,13 @@ public class PlayerStats : MonoBehaviour
         {
             Kill();
         }
+        UpdateHealBar();
     }
 
+    void UpdateHealBar()
+    {
+        healthBar.fillAmount = currentHealth / characterData.MaxHealth;
+    }
     public void Kill()
     {
         if (!GameManager.instance.isGameOver)
