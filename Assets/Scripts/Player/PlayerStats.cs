@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.U2D.Animation;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -20,11 +21,12 @@ public class PlayerStats : MonoBehaviour
     public float CurrentHealth
     {
         get { return currentHealth; }
-        set{
-            if (currentHealth!=value)
+        set
+        {
+            if (currentHealth != value)
             {
                 currentHealth = value;
-                if (GameManager.instance!=null)
+                if (GameManager.instance != null)
                 {
                     GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth;
                 }
@@ -138,7 +140,7 @@ public class PlayerStats : MonoBehaviour
     [Header("UI")]
     public Image healthBar;
     public Image expBar;
-    public Text levelText;
+    public TMP_Text levelText;
 
     public GameObject secondWeapon;
     public GameObject firstPassiveItemTest, secondPassiveItemTest;
@@ -148,7 +150,7 @@ public class PlayerStats : MonoBehaviour
         characterData = CharacterSelector.GetData();
         CharacterSelector.instance.DestroySingleton();
 
-        inventory=GetComponent<InventoryManager>();
+        inventory = GetComponent<InventoryManager>();
 
         //Assign the variables
         CurrentHealth = characterData.MaxHealth;
@@ -178,7 +180,7 @@ public class PlayerStats : MonoBehaviour
         GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet;
 
         GameManager.instance.AssignChosenCharacterUI(characterData);
-        
+
         UpdateHealBar();
         UpdateExpBar();
         UpdateLevelText();
@@ -186,7 +188,7 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        if(invincibilityTimer > 0)
+        if (invincibilityTimer > 0)
         {
             invincibilityTimer -= Time.deltaTime;
         }
@@ -218,7 +220,7 @@ public class PlayerStats : MonoBehaviour
             int experienceCapIncrease = 0;
             foreach (LevelRange range in levelRanges)
             {
-                if(level >= range.startLevel && level <= range.endLevel)
+                if (level >= range.startLevel && level <= range.endLevel)
                 {
                     experienceCapIncrease = range.experienceCapInCrease;
                     break;
@@ -237,18 +239,18 @@ public class PlayerStats : MonoBehaviour
     }
     void UpdateLevelText()
     {
-        levelText.text = "LV "+ level.ToString();
+        levelText.text = "LV " + level.ToString();
     }
     public void TakeDamage(float dmg)
     {
-        if(!isInvincible)
+        if (!isInvincible)
         {
             CurrentHealth -= dmg;
 
             invincibilityTimer = invincibilityDuration;
             isInvincible = true;
-        }       
-        if(CurrentHealth <= 0)
+        }
+        if (CurrentHealth <= 0)
         {
             Kill();
         }
@@ -271,11 +273,11 @@ public class PlayerStats : MonoBehaviour
 
     public void RestoreHealth(float amount)
     {
-        if(CurrentHealth < characterData.MaxHealth)
+        if (CurrentHealth < characterData.MaxHealth)
         {
             CurrentHealth += amount;
 
-            if(CurrentHealth > characterData.MaxHealth)
+            if (CurrentHealth > characterData.MaxHealth)
             {
                 CurrentHealth = characterData.MaxHealth;
             }
@@ -284,20 +286,20 @@ public class PlayerStats : MonoBehaviour
 
     void Recover()
     {
-        if(CurrentHealth < characterData.MaxHealth)
+        if (CurrentHealth < characterData.MaxHealth)
         {
             CurrentHealth += CurrentRecovery * Time.deltaTime;
 
-            if(CurrentHealth > characterData.MaxHealth)
+            if (CurrentHealth > characterData.MaxHealth)
             {
-                CurrentHealth=characterData.MaxHealth;
+                CurrentHealth = characterData.MaxHealth;
             }
         }
     }
 
     public void SpawnWeapon(GameObject weapon)
     {
-        if (weaponIndex>=inventory.weaponSlots.Count-1)
+        if (weaponIndex >= inventory.weaponSlots.Count - 1)
         {
             Debug.LogError("Inventory slots already full");
             return;
@@ -307,7 +309,7 @@ public class PlayerStats : MonoBehaviour
         spawnedWeapon.transform.SetParent(transform);
         //spawnedWeapons.Add(spawnedWeapon);
         inventory.AddWeapon(weaponIndex, spawnedWeapon.GetComponent<WeaponController>()); // add weapon to it's inventory slots
-        
+
         weaponIndex++;
     }
     public void SpawnPassiveItem(GameObject passiveItem)
