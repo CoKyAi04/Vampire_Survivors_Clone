@@ -17,6 +17,12 @@ public class GameManager : MonoBehaviour
     public GameState currentState;
     public GameState previousState;
 
+    [Header("Damage Text Settings")]
+    public Canvas damageTextCanvas;
+    public float textFontSize = 20;
+    public TMP_FontAsset textFont;
+    public Camera referenceCamera;
+
     [Header("Screens")]
     public GameObject pauseScreen;
     public GameObject resultsScreen;
@@ -35,8 +41,8 @@ public class GameManager : MonoBehaviour
     public TMP_Text chosenCharacterName;
     public TMP_Text levelReachedDisplay;
     public TMP_Text timeSuvivedDisplay;
-    public List<Image> chosenWeaponsUI = new List<Image> (6);
-    public List<Image> chosenPassiveItemsUI = new List<Image> (6);
+    public List<Image> chosenWeaponsUI = new List<Image>(6);
+    public List<Image> chosenPassiveItemsUI = new List<Image>(6);
 
     [Header("Stopwatch")]
     public float timeLimit;
@@ -101,7 +107,7 @@ public class GameManager : MonoBehaviour
     }
     public void PausedGame()
     {
-        if (currentState!=GameState.Paused)
+        if (currentState != GameState.Paused)
         {
             previousState = currentState;
             ChangeState(GameState.Paused);
@@ -124,7 +130,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (currentState==GameState.Paused)
+            if (currentState == GameState.Paused)
             {
                 ResumeGame();
             }
@@ -160,7 +166,7 @@ public class GameManager : MonoBehaviour
     }
     public void AssignChosenWeaponsAndPassiveItemsUI(List<Image> chosenWeaponsData, List<Image> chosenPassiveItemsData)
     {
-        if (chosenWeaponsData.Count != chosenWeaponsUI.Count || chosenPassiveItemsData.Count != chosenPassiveItemsUI.Count) 
+        if (chosenWeaponsData.Count != chosenWeaponsUI.Count || chosenPassiveItemsData.Count != chosenPassiveItemsUI.Count)
         {
             Debug.Log("Chosen weapons and passive items data lists have diffrencet lengths");
             return;
@@ -195,15 +201,15 @@ public class GameManager : MonoBehaviour
         stopwatchTime += Time.deltaTime;
         UpdateStopwatchDisplay();
 
-        if (stopwatchTime>=timeLimit)
+        if (stopwatchTime >= timeLimit)
         {
             playerObject.SendMessage("Kill");
         }
     }
     void UpdateStopwatchDisplay()
     {
-        int minutes = Mathf.FloorToInt(stopwatchTime/60);    
-        int seconds = Mathf.FloorToInt(stopwatchTime%60);
+        int minutes = Mathf.FloorToInt(stopwatchTime / 60);
+        int seconds = Mathf.FloorToInt(stopwatchTime % 60);
         stopwatchDisplay.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
     public void StartLevelUp()
@@ -213,9 +219,51 @@ public class GameManager : MonoBehaviour
     }
     public void EndLevelUp()
     {
-        chosingUpdate=false;
+        chosingUpdate = false;
         Time.timeScale = 1f;
         levelUpScreen.SetActive(false);
         ChangeState(GameState.Gameplay);
+    }
+
+    IEnumerator GenerateFloatingTextCoroutine(string text, Transform target, float duration = 1f, float speed = 50f)
+    {
+        GameObject textObj = new GameObject("Damage Floating Text");
+        RectTransform rect = textObj.AddComponent<RectTransform>();
+        TextMeshProUGUI tmPro = textObj.AddComponent<TextMeshProUGUI>();
+        tmPro.text = text;
+        tmPro.horizontalAlignment = HorizontalAlignmentOptions.Center;
+        tmPro.verticalAlignment = VerticalAlignmentOptions.Middle;
+        tmPro.fontSize = textFontSize;
+        if (textFont) tmPro.font = textFont;
+        rect.position = referenceCamera.WorldToScreenPoint(target.position);
+
+        Destroy(textObj, duration);
+
+        textObj.transform.SetParent(instance.damageTextCanvas.transform);
+
+        WaitForEndOfFrame w = new WaitForEndOfFrame();
+        float t = 0;
+        float yOffset = 0;
+        while (t < duration)
+        {
+            yield return w;
+            t += Time.deltaTime;
+
+            tmPro.color = new Color(tmPro.color.r, tmPro.color.g, tmPro.color.b, 1 - t / duration);
+
+            yOffset += speed * Time.deltaTime;
+            rect.position = referenceCamera.WorldToScreenPoint(target.position + new Vector3(0, yOffset));
+        }
+    }
+
+    public static void GenerateFloatingText(string text, Transform target, float duration = 1f, float speed = 1f)
+    {
+        if (!instance.damageTextCanvas) return;
+
+        if (!instance.referenceCamera) instance.referenceCamera = Camera.main;
+
+        instance.StartCoroutine(instance.GenerateFloatingTextCoroutine(
+            text, target, duration, speed));
+
     }
 }
