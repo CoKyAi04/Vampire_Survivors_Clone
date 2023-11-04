@@ -922,7 +922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4e0d5ef3924e6408e7a92e73f10f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  experience: 0
+  experience: 80
   level: 1
   experienceCap: 0
   invincibilityDuration: 0.5
@@ -938,9 +938,6 @@ MonoBehaviour:
   healthBar: {fileID: 71091707}
   expBar: {fileID: 1356478319}
   levelText: {fileID: 1211143967}
-  secondWeapon: {fileID: 6875451970477385550, guid: e78b8df2dc10a154a96b11b774da6e3d, type: 3}
-  firstPassiveItemTest: {fileID: 7860600125648375896, guid: 7b9bad530eeb5b248b07e4fa3cd806ad, type: 3}
-  secondPassiveItemTest: {fileID: 1864991448702644566, guid: a11a030879a6aec49915c6145da61a4d, type: 3}
 --- !u!114 &203881244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1014,6 +1011,8 @@ MonoBehaviour:
     upgradeDescriptionDisplay: {fileID: 1225718744}
     upgradeIcon: {fileID: 1762440673}
     upgradeButton: {fileID: 1902216946}
+  weaponEvolutions:
+  - {fileID: 11400000, guid: b106ee9814e58474398936ab4d7becee, type: 2}
 --- !u!1 &216782697
 GameObject:
   m_ObjectHideFlags: 0
@@ -8506,7 +8505,7 @@ MonoBehaviour:
   - {fileID: 932901190}
   - {fileID: 636620383}
   - {fileID: 266915690}
-  timeLimit: 60
+  timeLimit: 600
   stopwatchDisplay: {fileID: 216782698}
   isGameOver: 0
   chosingUpdate: 0
@@ -10657,6 +10656,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127135958}
   m_CullTransparentMesh: 1
+--- !u!1001 &288980625125058177
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 288980624267853686, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_Name
+      value: Treasure Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
 --- !u!1001 &461759422172868372
 PrefabInstance:
   m_ObjectHideFlags: 0

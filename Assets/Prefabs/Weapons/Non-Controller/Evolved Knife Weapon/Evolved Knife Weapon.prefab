@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4114826631756003246}
   - component: {fileID: 7611450130285066878}
   m_Layer: 0
-  m_Name: Knife Weapon Level 3
+  m_Name: Evolved Knife Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -682951395
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1815272878763697944, guid: 9a4fc81d095024a48880d86a3c54f2b7, type: 3}
+  m_Sprite: {fileID: -956682225960099608, guid: 9a4fc81d095024a48880d86a3c54f2b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141d04b9ec6bc654b9f19bcfd50efbee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: c3c2df702c7acfa4ead904c780d94e9c, type: 2}
-  destroyAfterSeconds: 2
+  weaponData: {fileID: 11400000, guid: 9a78a685ea078bf4cb6628f72975cb92, type: 2}
+  destroyAfterSeconds: 3
 --- !u!50 &4114826631756003246
 Rigidbody2D:
   serializedVersion: 4
@@ -137,7 +137,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.71875, y: 0.75}
+    oldSize: {x: 0.75, y: 0.75}
     newSize: {x: 0.71875, y: 0.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -145,16 +145,27 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.3640972, y: -0.32777807}
-      - {x: -0.3102065, y: -0.37499988}
-      - {x: -0.18452995, y: -0.2671132}
-      - {x: -0.11048367, y: -0.3554145}
-      - {x: -0.060891703, y: -0.3013472}
-      - {x: -0.13287553, y: -0.23053943}
+    - - {x: -0.39011133, y: -0.33644944}
+      - {x: -0.33795494, y: -0.3958112}
+      - {x: -0.17065583, y: -0.21508516}
+      - {x: -0.1139521, y: -0.21667257}
+      - {x: -0.055688925, y: -0.25452188}
+      - {x: -0.031021006, y: -0.13781106}
+      - {x: 0.042286158, y: -0.0657834}
+      - {x: 0.13259521, y: 0.048733126}
+      - {x: 0.21866697, y: 0.025969654}
+      - {x: 0.35825163, y: 0.18093783}
       - {x: 0.3604155, y: 0.26565284}
       - {x: 0.35937512, y: 0.37972233}
       - {x: 0.30732927, y: 0.36691964}
-      - {x: -0.21204561, y: -0.14767936}
-      - {x: -0.2751916, y: -0.089341745}
-      - {x: -0.3303452, y: -0.13735855}
-      - {x: -0.27909765, y: -0.19791481}
+      - {x: 0.09585794, y: 0.19339938}
+      - {x: -0.02726436, y: 0.13405281}
+      - {x: -0.16348578, y: 0.12286745}
+      - {x: -0.16455443, y: 0.074256465}
+      - {x: -0.08870478, y: 0.038495205}
+      - {x: -0.13579215, y: -0.04476314}
+      - {x: -0.21969473, y: -0.01997067}
+      - {x: -0.26617724, y: -0.09400183}
+      - {x: -0.22265854, y: -0.1276059}
+      - {x: -0.22057493, y: -0.17004228}
+      - {x: -0.25655204, y: -0.21005471}

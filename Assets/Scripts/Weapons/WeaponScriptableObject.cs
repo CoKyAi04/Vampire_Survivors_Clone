@@ -28,7 +28,7 @@ public class WeaponScriptableObject : ScriptableObject
 
     [SerializeField]
     int level;
-    public int Level { get => level; private set =>level = value; }
+    public int Level { get => level; private set => level = value; }
 
     [SerializeField]
     GameObject nextLevelPrefab;
@@ -46,4 +46,7 @@ public class WeaponScriptableObject : ScriptableObject
     Sprite icon;
     public Sprite Icon { get => icon; private set => icon = value; }
 
+    [SerializeField]
+    int evolvedUpgradeToRemove;
+    public int EvolvedUpgradeToRemove { get => evolvedUpgradeToRemove; private set => evolvedUpgradeToRemove = value; }
 }

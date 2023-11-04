@@ -22,3 +22,4 @@ MonoBehaviour:
   name: Knife
   description: Shoots knives in dicrection the player facing
   icon: {fileID: -1815272878763697944, guid: 9a4fc81d095024a48880d86a3c54f2b7, type: 3}
+  evolvedUpgradeToRemove: 0
