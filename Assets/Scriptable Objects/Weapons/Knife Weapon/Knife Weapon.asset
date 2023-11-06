@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Knife Weapon
   m_EditorClassIdentifier: 
   prefab: {fileID: 5814258688262570071, guid: 78b6e1ca3a6934641951eea6c8d65373, type: 3}
-  damage: 5
+  damage: 8
   speed: 10
-  cooldownDuration: 2
+  cooldownDuration: 0.5
   pierce: 1
   level: 1
   nextLevelPrefab: {fileID: 5387621027148294832, guid: 490e13efccec1044b98231537e999e68, type: 3}

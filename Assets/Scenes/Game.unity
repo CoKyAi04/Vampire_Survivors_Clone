@@ -6096,11 +6096,583 @@ MonoBehaviour:
     waveQuota: 0
     spawnInterval: 4
     spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: 69403e684532f8a4094fd87c16a70679, type: 3}
+    - enemyName: Red Bat
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 461759420925149495, guid: f550976ff77bce4468ccf6630bd31911, type: 3}
+    waveQuota: 0
+    spawnInterval: 4
+    spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 10
+  maxEnemiesAllowed: 50
   maxEnemiesReached: 0
-  waveInterval: 10
+  waveInterval: 5
   relativeSpawnPoints:
   - {fileID: 1236146620}
   - {fileID: 1720779139}
@@ -6121,7 +6693,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386592777}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.008932529, w: 0.9999601}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6139,7 +6711,7 @@ Transform:
   - {fileID: 1382423123}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.024}
 --- !u!1 &1422648404
 GameObject:
   m_ObjectHideFlags: 0
@@ -10813,11 +11385,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.99
+      value: -8.51
       objectReference: {fileID: 0}
     - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.04
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: 288980624267853690, guid: 52323a4850993fa41843e594c431c2d7, type: 3}
       propertyPath: m_LocalPosition.z
